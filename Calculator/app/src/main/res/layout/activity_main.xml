@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.abdullah.calculator.MainActivity"
+    android:orientation="vertical"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="16dp"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="الوزن القائم"
+            android:id="@+id/textView1"
+            android:layout_weight=".333333"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textColor="#f00"
+            android:padding="16dp"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="الوزن الفارغ"
+            android:id="@+id/textView2"
+            android:layout_weight=".33333"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textColor="#f00"
+            android:padding="16dp"
+            />/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="ثمن الكيلو"
+            android:gravity="center"
+            android:id="@+id/textView3"
+            android:layout_weight=".33333"
+            android:textSize="25sp"
+            android:textColor="#f00"
+            android:padding="16dp"
+            />/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="ضع الرقم...."
+            android:id="@+id/total"
+            android:layout_weight=".333333"
+            android:gravity="center"
+            android:inputType="number"
+            />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="ضع الرقم...."
+            android:id="@+id/box"
+            android:layout_weight=".33333"
+            android:gravity="center"
+            android:inputType="number"
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="ضع الرقم...."
+            android:gravity="center"
+            android:id="@+id/factor"
+            android:layout_weight=".33333"
+            android:inputType="number"
+            />
+
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:id="@+id/button"
+        android:text="احسب"
+        android:onClick="calculate"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/results">
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
